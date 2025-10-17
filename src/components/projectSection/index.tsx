@@ -2,16 +2,13 @@
 import { SquareArrowOutUpRight } from 'lucide-react'
 import * as S from './styles'
 import github from 'devicon/icons/github/github-original.svg'
-import mensal from '../../assets/mensal.png'
-import efood from '../../assets/Efood.png'
 import eplay from '../../assets/Eplay.png'
-import esports from '../../assets/ESports.png'
-import listaDeContatos from '../../assets/ListaDeContatos.png'
-import spiderman from '../../assets/SpiderMan.png'
-import breakingBad from '../../assets/BreakingBad.png'
-import disney from '../../assets/Disney.png'
 import foodNow from '../../assets/foodNow.png'
-import csgoNades from '../../assets/CSGranadas.png'
+import cherri from '../../assets/image2.png'
+import host from '../../assets/image.png'
+import oask from '../../assets/imagem3.png'
+import casa from '../../assets/imegem4.png'
+import foundever from '../../assets/imagem5.png'
 
 interface ProjetosMockados {
   name: string,
@@ -22,67 +19,56 @@ interface ProjetosMockados {
 }
 
 export const ProjetosMockados: ProjetosMockados[] = [
-  // {
-  //   name: 'Mensalidade',
-  //   description: 'Projeto de mensalidade pensando em professores de academia que não tem controle do fluxo de alunos e mensalidade.',
-  //   githubLink: 'https://github.com/R4NP3R/projeto_mensalidade',
-  //   imageRef: mensal
-  // },
-  {
-    name: 'Efood',
-    description: 'Projeto da EBAC para colocar em pratica o conhecimento em React, com acompanhamento dos tutores.',
-    githubLink: 'https://github.com/R4NP3R/efood',
-    siteLink: 'https://efood-phi.vercel.app/',
-    imageRef: efood
-  },
   {
     name: 'EPlay',
-    description: 'Projeto da EBAC para colocar em pratica o conhecimento em React e consumo de API, com acompanhamento dos tutores.',
-    githubLink: 'https://github.com/R4NP3R/eplay',
+    description: 'Projeto Vitrine colocar em pratica o conhecimento em React e consumo de API',
+    githubLink: '',
     siteLink: 'https://eplay-rho-five.vercel.app/',
     imageRef: eplay
   },
   {
     name: 'Food Now',
-    description: 'Projeto freelancer feito para um polonês em html, css e javascript',
-    githubLink: 'https://github.com/R4NP3R/freela_restaurant',
+    description: 'Projeto freelancer feito para um polonês',
+    githubLink: '',
     siteLink: 'https://freela-restaurant.vercel.app/',
     imageRef: foodNow
-  },
-  // {
-  //   name: 'Granadas CS:GO',
-  //   description: 'Desafio da EBAC para colocar em pratica o conhecimento em construção de site com bootstrap, com acompanhamento dos tutores.',
-  //   githubLink: 'https://github.com/R4NP3R/Granadas-CSGO',
-  //   siteLink: 'https://granadas-csgo.vercel.app/',
-  //   imageRef: csgoNades
-  // },
-  // {
-  //   name: 'EBAC Sports',
-  //   description: 'Desafio da EBAC para colocar em pratica o conhecimento em Redux fazendo um carrinho, com acompanhamento dos tutores.',
-  //   githubLink: 'https://github.com/R4NP3R/ebac_sports',
-  //   siteLink: 'https://ebac-sports-ashy.vercel.app/',
-  //   imageRef: esports
-  // },  
+  }, 
   {
-    name: 'Lista de Contatos',
-    description: 'Desafio da EBAC, fazer um lista de contatos com Redux com adição, remoção e edição de contatos, inspirado no contatos da Google',
-    githubLink: 'https://github.com/R4NP3R/exercicio_lista_de_contatos_React',
-    siteLink: 'https://lista-de-contatos-opal.vercel.app/',
-    imageRef: listaDeContatos
+    name: 'Foundever',
+    description: 'Site criado para uma empresa que impulsiona marcas',
+    githubLink: '',
+    siteLink: 'https://foundever.com/pt-br/',
+    imageRef: foundever
+  },
+    {
+    name: 'Loja De Roupas Cherri',
+    description: 'Site de vendas de roupas criado pelo shopify com linguagem de programação liquid',
+    githubLink: '',
+    siteLink: 'https://cherrifashion.com/',
+    imageRef: cherri
+  },
+
+  {
+    name: 'Site de hospedagem de VSL',
+    description: 'Site criado para hospedar videos',
+    githubLink: '',
+    siteLink: 'https://www.hostvsl.com.br/',
+    imageRef: host
+  },
+
+  {
+    name: 'One of A Kind Stories',
+    description: 'Site criado para venda de presentes',
+    githubLink: '',
+    siteLink: 'https://oaks.com.br/',
+    imageRef: oask
   },
   {
-    name: 'Clone Disney+',
-    description: 'Projeto da EBAC para colocar em pratica o conhecimento em contrução de site com HTML e CSS',
-    githubLink: 'https://github.com/R4NP3R/clone_disneyplus',
-    siteLink: 'https://clone-disneyplus-theta.vercel.app/',
-    imageRef: disney
-  },
-  {
-    name: 'Spiderman Carrousel',
-    description: 'Carrousel do SpiderMan para colocar em prática conhecimentos de estilização e framer motion.',
-    githubLink: 'https://github.com/R4NP3R/NextJS-spiderman-carousel',
-    siteLink: 'https://spiderman-carousel.vercel.app/',
-    imageRef: spiderman
+    name: 'Casa do Trem',
+    description: 'Site de vitrine criado para mostrar Atelier',
+    githubLink: '',
+    siteLink: 'https://esculturas-personalizadas.ateliercasadotrem.com.br/',
+    imageRef: casa
   },  
 ]
 
@@ -90,7 +76,7 @@ export const ProjectsSection = () => {
   return (
     <S.StyledSection id="Projetos" className='container'>
       <S.SectionTittle>
-        <h1>Projetos Desenvolvidos para clientes</h1>
+        <h1>PROJETOS DESENVOLVIDOS PARA CLIENTES</h1>
       </S.SectionTittle>
       <S.SectionProjects>
         {ProjetosMockados.map((projeto) => (
