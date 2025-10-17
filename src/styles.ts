@@ -8,7 +8,7 @@ export const GlobalCSS = createGlobalStyle`
     font-family: 'Segoe UI';
     list-style: none;
     text-decoration: none;
-    color: #66b4caff;
+    color: #fff
   }
 
   body {
