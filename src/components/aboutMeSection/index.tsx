@@ -50,21 +50,6 @@ export const AboutMeSection = () => {
           </S.ContactsList>
         </S.ContactsListContainer>
       </S.Contacts>
-      <S.BackgroundVideo
-        initial={{ opacity: 0 }}
-        whileInView={{ opacity: 1 }}
-        transition={{ duration: 1.2 }}
-      >
-        <motion.video
-          autoPlay
-          loop
-          muted
-        >
-          
-        </motion.video>
-      </S.BackgroundVideo>
-
-
     </S.AboutMeSectionContainer>
   )
 }
