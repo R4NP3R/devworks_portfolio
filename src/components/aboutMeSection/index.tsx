@@ -1,7 +1,4 @@
 import * as S from './styles'
-
-import { motion } from 'framer-motion'
-
 import { FaInstagram } from 'react-icons/fa'
 import { FaWhatsapp } from 'react-icons/fa'
 
